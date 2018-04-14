@@ -1,0 +1,114 @@
+body{
+margin: 0;
+}
+.contaner{
+display: flex;
+width: 100%;
+height: 100vh;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-color:red;
+      animation: 15s infinite linear;
+        animation-name: sky;
+        
+}
+.ball{
+       background-image: url(../img/ZVt9kEJkyQk.jpg);
+        background-size: cover;
+        background-position-x: -20px;
+       width: 80px;
+       height: 80px;
+       border-radius: 50%;
+       border: 4px solid rgba(85, 79, 79, 0.6);
+      animation: 5s infinite linear;
+       animation-name: move;
+}
+.ball:hover{
+    border: 4px solid rgba(29, 156, 93, 0.6);
+        animation: 1s infinite linear;
+       animation-name: move2;
+}
+   @keyframes sky {
+        0% {
+          background: darkslateblue;
+          }
+        50% {
+          background: skyblue;
+          box-shadow: 0 -400px 300px -300px steelblue inset;
+          }
+        85% {
+         background: darkslateblue;
+         box-shadow: 0 -400px 300px -300px orangered inset;
+         }
+        100% {
+          background: darkslateblue;
+          }
+      }
+@keyframes move {
+        0% {
+    
+          }
+        10% {
+             margin-left: -10.5em;
+            margin-bottom: -10.5em;
+          }
+        20% {
+ 
+          }
+        30% {
+          margin-left: -36em;
+            margin-bottom: -36em;
+          }
+        40% {
+            margin-left: 15em;
+            margin-top: -10em;
+          }
+        50% {
+         margin-bottom: -5.5em;
+             margin-top: -15em;
+          margin-left: -5.5em;
+          }
+        60% {
+           margin-left: 1.5em;
+             margin-bottom: 1.5em;
+          }
+        70% {
+          margin-left: 3.5em;
+            margin-bottom: 3.5em;
+          }
+        80% {
+          margin-left: 2.5em;
+            margin-bottom: 2.5em;
+          }
+        90% {
+          margin-left: 1em;
+            margin-bottom: 1em;
+          }
+        100% {
+          left: 98%;
+          margin-left: -2.5em;
+             margin-bottom: -2.5em;
+          }
+      }
+      @keyframes move2 {
+        0% {
+            margin-left: 15em;
+            margin-top: -10em;
+          }
+      
+        70% {
+            margin-left: 3.5em;
+            margin-bottom: 3.5em;
+          }
+        80% {
+          margin-left: 2.5em;
+            margin-bottom: 2.5em;
+          }
+  
+        100% {
+          left: 98%;
+          margin-left: -2.5em;
+             margin-bottom: -2.5em;
+          }
+      }
